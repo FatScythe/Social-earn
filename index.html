@@ -1,9 +1,365 @@
 <!DOCTYPE html>
-<html>
+<html "en-US">
 <head>
 	<title>Social Earn</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="utilities.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Rubik:wght@300;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<!------------header------------->
+<section class="header bg-primary">
+<div class="bg-primary flex container" >
+	<!-- logo -->
+	<div>
+		<a href="index.html"><img src="image/logo.png" alt="logo"></a>
+	</div>
+	<!-- navmenu -->
+	<nav id="navLinks">
+		<span id="menu" class="hidemenu" onclick="hideMenu()" style="float: right; font-size: 30px; margin-right: 10px;"><i class="fa fa-times-circle"></i></span>
+		<ul>
+			<li><a href="index">Home</a></li>
+			<li><a href="#">About-Us</a></li>
+			<li><a href="#">Testimonials</a></li>
+			<li><a href="#">Live Payments</a></li>
+			<li><a href="#">Info</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Sign-Up</a></li> 
+		</ul>
+	</nav>
 
+	<!-- Sign-Up -->
+	<div class="sign-up">
+		<button class="btn">Sign Up</button>
+	</div>
+
+	<span id="menu" class="showmenu" onclick="showMenu()" style="font-size: 30px;"><i class="fa fa-bars"></i></span>
+
+</div>
+</section>
+
+
+<!---------------- Sub-header ------------->
+
+<section class="sub-header bg-primary">
+	<div class="container my-4 grid2">
+		<div class="text">
+			<p class="my-2">Make $500 Today!<br>
+			Get Paid To 👇<br>
+			Invite Friends</p> 
+			<p class="mx-5">Get paid to invite friends, test out free apps <br>games and more! Earn $10+ for every user you refer!</p><br><br>
+
+			<div>
+				<span>
+					<button class="btn mx-3">LIVE PAYMENTS <i class="fa fa-money" style="color: #000;"></i></button>
+					<button class="btn">REVIEWS <i class="fa fa-heart" style="color: #000;"></i></button><br><br><br><br>
+				</span>
+				<button class="btn mx-3 my-2">JOIN NOW!</button>
+			</div>
+
+		</div>
+
+		<div>
+			<img src="image/hero-image.jpg" alt="hero">
+		</div>
+	</div>	
+</section>
+
+
+<!-- -----------Join----------- -->
+<section class="join">
+	<div class="container my-4">
+		<p class="tip-text" id="cancel">
+			<span style="float: right;" onclick="cancel()"><i class="fa fa-times-circle"></i></span> 
+			We have received reports of people pretending to be SocialEarn.<br> These <a href="#" class="tips">tips</a> can help you avoid these imposters and stay safe!
+		</p>
+
+		<p class="py-3">THE #1 SOCIAL EARNING NETWORK IN THE WORLD.</p>
+
+		<p class="community">Join Our Community Today !</p><br><br>
+		<div class="grid3 container">
+			<div class="wrapper1">
+				<img src="image/welcome.svg" alt="welcome" width="200px" height="200px">
+				<h1>1.Welcome</h1>
+				<p>You've completed the 1st step necessary to be a part of the SocialEarn family. You'll be rewarded a $25 bonus Post-sign-up!</p>
+				<button>Sign-Up</button>
+			</div>
+
+			<div class="wrapper2">
+				<img src="image/message-sent.svg" alt="share" width="200px" height="200px">
+				<h1>2.Share</h1>
+				<p>Get paid for sharing your unique invite link with friends, family, and colleagues. Get $2/click and $10/signup!</p>
+				<button>Sign-Up</button>
+			</div>
+
+			<div class="wrapper3">
+				<img src="image/payment processing.svg" alt="withdraw" width="200px" height="200px">
+				<h1>3.Withdraw</h1>
+				<p>Instantly have access to your money at any time! We offer withdrawls through PayPal, Venmo, Cash App, Bitcoin, and More.</p>
+				<button>Sign-Up</button>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!-- ------------------The Biggest------------------ -->
+
+<section class="my-5 biggest" >
+	<div class="container grid2">
+
+		<div class="biggest-item">
+			<img src="image/sub-header.jpg" alt="woman">
+		</div>
+
+		<div class="biggest-item">
+			<h1>The Biggest!</h1><br>
+			<p>
+			As the community grows and members become more involved, your impact amplifies. Within the last three years, SocialEarn community members have completed over 500,000 surveys, 3M+ Downloads, and 300M Clicks, and those numbers continue to grow.
+
+			While some Networks make their affiliates wait years for payments, SocialEarn members have instant access to their funds once completing the withdrawal process. By being a part of the SocialEarn community, you are actively shaping the world around you.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- ----------------------Stay tuned------------------ -->
+
+<section class="stay">
+	<div class="container flex">
+		<div class="stay-item a">
+			<h1>Stay tuned with push-notifications</h1><br>
+
+			<p>Know when someone has signed up using your link immediately! SocialEarn provides users with push notifications for clicks, referrals, and bonuses. Integrate SocialEarn into your daily experience.</p><br>
+
+			<h1>24/7 Access to your account</h1><br>
+
+			<p>We have an up-time of 99.9%, so rest assured you will always have access. If there is any scheduled maintenance, we will alert all affiliates beforehand.</p><br>
+		</div>
+
+		<div class="stay-item b">
+			<img src="image/sub-header2.jpg" alt="cash-out">
+		</div>
+	</div>
+	
+</section>
+
+<!-------------User experience------------->
+<section class="user my-5">
+	<div class="container grid3">
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_half</span>
+
+			<p>
+			It took some honest hard work, but I had fun doing it. Got my first PayPal payout. Thank you SocialEarn for the opportunity!
+			</p><br>
+
+			<img src="image/user1.jpeg">
+			<div>
+				Taylor F.<br>
+				Valued Affiliate
+			</div>
+		</div>
+
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_outline</span>
+
+			<p>
+			This is going so far soo good on my 2nd payment right now and I'm still at it but it's a really fun way of making money and building together with each other's help cool fast cash thanks to this team behind the screen thanks for something really helpful for everyone thank you
+			</p><br>
+
+			
+			<div>
+				<img src="image/user2.jpeg">
+				<p>Tanya R.<br>
+				Valued Affiliate</p>
+			</div>
+		</div>
+					
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_half</span>
+
+			<p>
+			I would recommend this to anyone trying to make some side money using their phone. It's not that complicated to complete the task, invite friends, and make money.
+			</p><br>
+
+			<img src="image/user3.jpeg">
+			<div>
+				Fred M.<br>
+				Valued Affiliate
+			</div>
+		</div>
+
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_half</span>
+
+			<p>
+			I have a small following on Instagram and I found SocialEarn about a year ago. I've been getting paid for promoting my invite link on IG stories, Facebook timeline, and Twitter feed I also like completing their surveys.
+			</p><br>
+
+			<img src="image/user4.jpeg">
+			<div>
+				Craig D.<br>
+				Valued Affiliate
+			</div>
+		</div>
+
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_half</span>
+
+			<p>
+			I initially started using SocialEarn for side income but it has turned into my main work. Their payout is very high and they allow you to cash out instantly. I love THEM and you should TOO.
+			</p><br>
+
+			<img src="image/user5.jpeg">
+			<div>
+				Tyler D.<br>
+				Valued Affiliate
+			</div>
+		</div>
+
+		<div class="user-item py-5 px-2">
+		    <span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_rate</span>
+			<span class="material-icons">star_outline</span>
+
+			<p>
+			I tell all my friends and colleagues about SocialEarn and they've grown to love it as much as i do, it's truly an opportunity of a lifetime. You get to make money from your social media account and by downloading apps.
+			</p><br>
+
+			
+			<div>
+				<img src="image/user6.jpeg">
+				<p>Alissa D.<br>
+				Valued Affiliate</p>
+			</div>
+		</div>
+
+	</div>
+	
+</section>
+
+
+<!-- ------------------Be Social Get Paid----------------- -->
+
+<section class="social my-5">
+	<div class="container">
+		<h1>Be Social. Get Paid.</h1>
+		<p>Get paid for interacting with the world around you.</p>
+		<img src="image/asset-4.jpg" alt="socials">
+	</div>
+</section>
+
+<!-- ------------------Earning----------------- -->
+
+<section class="earn my-5 bg-primary">
+	<div class="container flex bg-primary">
+		<h1>Ready to start<br>earning money!?</h1>
+		<button class="btn">Sign-Up</button>
+	</div>
+	
+</section>
+
+<!-- ------------------footer----------------- -->
+<section class="footer"><br><br><br><br><br>
+	<div class="container grid3">
+		<div class="footer-item">
+			<img src="image/logo.png" alt="logo"><br>
+			<a href=""><i class="fa fa-medium"></i></a>
+			<a href=""><i class="fa fa-twitter"></i></a>
+			<a href=""><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/FatScythe"><i class="fa fa-github"></i></a>
+		</div>
+
+		<div class="footer-item">
+			<h3><i class="fa fa-caret-down"></i>Company</h3>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Testimonial</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">blog</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-item">
+			<h3><i class="fa fa-caret-down"></i>Legal</h3>
+			<ul>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Privacy</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ------------------JavaScript for toggle menu------------- -->
+	<script>
+
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){ 
+			navLinks.style.left = "0";
+			
+		}
+
+		function hideMenu(){ 
+			navLinks.style.left = "-60%";
+			
+		}
+
+		function cancel(){
+			document.getElementById('cancel').style.display = "none";
+		}
+
+
+	</script>
+	<noscript>
+		This browser does not support JavaScript :-(
+	</noscript>
 </body>
 </html>
