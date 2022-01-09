@@ -606,6 +606,10 @@
 		height: 80vh;
 	}
 
+	.footer .container {
+		margin: 50px auto;
+	}
+
 	.footer .grid3 {
 		grid-template-columns: 1fr;
 	}
